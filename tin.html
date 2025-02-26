@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+            font-size: 36px;
+        }
+        p {
+            color: #666;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #image-container {
+            margin-top: 20px;
+        }
+        #command {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #444;
+        }
+    </style>
+    <script>
+        function generateImage() {
+            const imgContainer = document.getElementById('image-container');
+            const commandContainer = document.getElementById('command');
+            
+            const imageUrl = 'https://imgur.com/a/lVZM9AK'; 
+            const commandText = "Generate an image of a successful entrepreneur working with international companies and achieving wealth.";
+            
+            imgContainer.innerHTML = `<img src="${imageUrl}" alt="Generated Image" width="500">`;
+            commandContainer.innerText = `Command used: ${commandText}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Ước mơ của em</h1>
+    <p>Ước mơ của em là trở thành một doanh nhân thành đạt, làm việc với các công ty quốc tế và trở nên giàu có. Động lực khiến em theo đuổi giấc mơ này là khi tìm hiểu về tỷ phú Elon Musk của công ty Tesla, em cảm thấy ngưỡng mộ tính cách cũng như sự thông minh của ông khi là ông chủ của tập đoàn xe ô tô điện Tesla hay là SpaceX và mới đây là một trong những cánh tay phải trong cuộc đua tranh tổng thống của Donald Trump. 
+    <br><br>
+    Để đạt được mục tiêu này, em đã xây dựng kế hoạch học tập rõ ràng, rèn luyện kỹ năng cần thiết và đang chuẩn bị để có thể vô trường đại học tốt nhất. Em tin rằng với sự quyết tâm và nỗ lực không ngừng, em sẽ đạt được mục tiêu của mình trong tương lai.</p>
+    <button onclick="generateImage()">Generate Image</button>
+    <div id="image-container"></div>
+    <p id="command"></p>
+</body>
+</html>
